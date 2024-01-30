@@ -1,13 +1,723 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="keywords" content="cvprw2024">
-    <meta name="description" content="cvprw2024">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  </head>
-  <body>
-    cvprw2024
-  </body>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--Open Graph Related Stuff-->
+    <meta property="og:title" content="Workshop on Computer Vision with Humans in the Loop 2024" />
+    <meta property="og:url" content="https://cvhl.org/" />
+    <meta property="og:description" content="June 17 at CVPR 2024" />
+    <meta property="og:description" content="CVPR 2024" />
+    <meta property="og:site_name" content="Computer Vision with Humans in the Loop 2024" />
+    <meta property="og:image" content="static/cvpr2023/img/head_img/cvpr_2023_header.jpeg" />
+    <meta property="og:image:url" content="static/cvpr2023/img/head_img/cvpr_2023_header.jpeg" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Workshop on Computer Vision with Humans in the Loop 2024">
+    <meta name="twitter:description" content="June 17 at CVPR 2023">
+    <meta name="twitter:description" content="CVPR 2024">
+    <meta name="twitter:image" content="static/cvpr2023/img/head_img/cvpr_2023_header.jpeg">
+    <title>Computer Vision in the Wild</title>
+    <link rel="stylesheet" href="./static/css/foundation.css">
+    <link rel="stylesheet" href="./static/css/main.css">
+    <script src="./static/js/vendor/jquery.js"></script>
+    <script src="./static/js/jquery-2.1.3.min.js"></script>
+
+    <script type="text/javascript" src="./static/js/jquery.countdown.min.js"></script>
+    <script type="text/javascript" src="./static/js/moment.min.js"></script>
+    <script type="text/javascript" src="./static/js/moment-timezone-with-data.min.js"></script>
+
+    <script type="text/javascript" src="./static/js/main-vqa.js"></script>
+    <script type="text/javascript" src="./static/js/main-gqa.js"></script>
+    <script type="text/javascript" src="./static/js/main-visdial.js"></script>
+    <script type="text/javascript" src="./static/js/main-textvqa.js"></script>
+    <script type="text/javascript" src="./static/js/main-textcaps.js"></script>
+    <script type="text/javascript" src="./static/js/main-vizwiz.js"></script>
+
+</head>
+<style type="text/css">
+.schedule table {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.schedule tr:hover {
+    background-color: #D3D3D3;
+}
+
+.schedule img {
+    max-height: 95px;
+    max-width: 140px;
+    margin-right: 2px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border-radius: 50%;
+}
+
+.abstract-content {
+    display: none;
+    padding: 5px;
+}
+
+.disclaimer {
+    padding-left: 25px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 16px;
+}
+.disclaimer b {
+    font-weight: bold !important;
+}
+</style>
+
+<body class="off-canvas hide-extras" style="min-width:1300px; min-height:750px;">
+    <header>
+        <div class="row">
+            <a href="https://cvhl.org/"><img style="height: 160px; position:absolute; top:280px; right:26px;" src="./static/cvpr2023/img/head_img/cvpr-2023-logo.jpeg" alt="logo" /></a>
+            <!-- <h1><img style="height: 200px;" src="./static/eccv2022/img/cvinthewild_logo.jpg" alt="logo" /><br></h1> -->
+            <br>
+        </div>
+    </header>
+    <div class="contain-to-grid">
+
+            </section>
+        </nav>
+    </div>
+    <section role="main" style="padding: 1em;">
+        <div class="row">
+            <p style="font-size:50px; color:black; font-weight: 50" align=center>The 1st Workshop on Computer Vision with Humans in the Loop
+                <br>
+                <span style="font-size:30px; color:gray; font-weight: 50" align=center>@ CVPR 2024, June 17 or 18 (To be determined by the program) <br> </span>
+
+            </p>
+
+
+
+
+        <div class="row">
+            <h1 style="font-size:30px; color:grey; font-weight: 200">Overview</h1>
+            <div class="large-12 columns" style="text-align:left;">
+                <p style="font-size:15px; font-weight: 400; text-align:left">
+                The ultimate goal of computer vision is to enable computers to perceive the world like humans. In the past two decades, computer vision has 
+                  made phenomenal progress and even surpassed human parity in a few tasks. However, in many more tasks, computer vision is still not as great as 
+                  human vision, with many scattered issues that are difficult to unify and many long-tailed applications that require either special architectures 
+                  or tedious data effort.
+                <br><br>
+
+                While the research community is still pursuing foundation models, we want to emphasize the importance of having humans in the loop 
+                  to solve computer vision. We have observed many research works trying to address vision problems from this perspective. 
+                  Early works include <a href="https://dl.acm.org/doi/pdf/10.1145/1015706.1015719"> Lazy Snapping</a>[SIGGRAPH 2004], which leverages user clicks and scribbles to make interactive segmentation 
+                  possible. Nowadays, mouse clicks and scribbles have become an indispensable interactive operation for object segmentation, 
+                  matting, and many other image and video editing and annotation problems, such as <a href="https://arxiv.org/abs/2104.06404">Implicit PointRend</a>[CVPR 2022], 
+                  <a href="https://arxiv.org/abs/2204.02574">Focal Click</a>[CVPR 2022], <a href="https://segment-anything.com/">SAM</a>[ICCV 2023], and <a href="https://openaccess.thecvf.com/content/ICCV2023/html/Yang_Neural_Interactive_Keypoint_Detection_ICCV_2023_paper.html">Click Pose</a>[ICCV 2023]. 
+                  More recently, thanks to the advancement in language 
+                  understanding, a new trend has emerged to leverage language or visual prompts to help extend a vision model to cover longtail concepts,
+                  such as <a href="https://arxiv.org/abs/2103.00020">CLIP</a> [ICML 2021], <a href="https://arxiv.org/abs/2112.03857">GLIP</a> [CVPR 2022], <a href="https://arxiv.org/abs/2303.05499">Grounding DINO</a> [arxiv 2023], <a href="https://arxiv.org/abs/2304.06718">SEEM</a> [NeurIPS 2023], and <a href="https://arxiv.org/abs/2306.05399">Matting Anything</a> [arxiv 2023].
+                  <br><br>
+                  
+                 Moreover, for real-world applications and from a system perspective, computer vision systems need to be self-aware, meaning that 
+                  the systems need to know when they do not know. Since the ultimate objective of visual perception is to facilitate downstream 
+                  decisions, such self-awareness is very important as it endows the systems the capability to actively query humans for input or 
+                  actively prompt for human control (such as in the Tesla Autopilot scenario). Early research works include using active learning 
+                  for more efficient data labeling [ICCV 2009], to more recent efforts advocating solutions to open-set recognition [T-PAMI 2013], 
+                  and more recent efforts in uncertainty modeling in deep learning, dubbed the name <a href="https://papers.nips.cc/paper_files/paper/2018/hash/a981f2b708044d6fb4a71a1463242520-Abstract.html">evidential deep learning</a> [NeurIPS 2018].
+                  <br><br>
+                  
+                  Considering both its importance and the recent research trend, we propose to organize a workshop entitled “Computer Vision with Humans in the Loop”
+                  to bring researchers, practitioners, and enthusiasts to explore and discuss the evolving role of human feedback in solving computer vision problems.
+                  
+   
+         
+
+                </p>
+            </div>
+            <hr>
+        </div>
+
+
+
+
+
+<!-- Invited Speakers 
+<div class="row">
+    <h1 style="font-size:30px; color:grey; font-weight: 200">Keynote Speaker</h1>
+    <div class="team" id="people">
+        <div class="row" style="display: flex; text-align:center; justify-content: center;">
+
+            <div class="large-1 columns">
+                <p></p>
+            </div>
+
+
+            <div class="large-4 columns">
+                <a href="https://www.andrewng.org/"><img src="./static/cvpr2023/img/speakers/andrew-ng.png" class="speaker_picture" style="width:200px; height:200px;">
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Andrew Ng
+                    <br> Founder of <a href="https://www.deeplearning.ai/">DeepLearning.AI</a>, <a href="https://landing.ai/">Landing AI</a>, General Partner at <a href="https://aifund.ai/">AI Fund</a>, Chairman and Co-Founder of <a href="https://www.coursera.org/">Coursera</a> and an Adjunct Professor at Stanford University. </p>
+            </div>
+
+
+
+
+            <div class="large-1 columns">
+                <p></p>
+            </div>
+
+
+            <div class="large-1 columns">
+                <p></p>
+            </div>
+        </div>
+
+    <hr>
+</div>
+ -->
+
+
+<!-- Invited Speakers -->
+             <div class="row">
+                <h1 style="font-size:30px; color:grey; font-weight: 200">Invited Speakers</h1>
+                <div class="team" id="people">
+                    <div class="row" style="display: flex; text-align:center; justify-content: center;">
+
+                        <div class="large-2 columns">
+                            <a href="https://www.microsoft.com/en-us/research/people/jfgao/"><img src="./static/cvpr2024/img/speakers/jianfeng.jpeg"  class="speaker_picture" style="width:150px; height:150px;">
+                                <br><br>
+                            </a>
+                            <p style="font-size:12px; font-weight: 200;">Jianfeng Gao
+                                <br>Microsoft Research</p>
+                        </div>
+
+                        <div class="large-2 columns">
+                            <a href="https://web.eecs.umich.edu/~jjcorso/"><img src="./static/cvpr2024/img/speakers/jcorso.jpeg"  class="speaker_picture" style="width:150px; height:150px;">
+                                <br><br>
+                            </a>
+                            <p style="font-size:12px; font-weight: 200;">Jason Corso
+                                <br>University of Michigan</p>
+                        </div>  
+
+                        <div class="large-2 columns">
+                            <a href="https://chaoyuan.org/"><img src="./static/cvpr2024/img/speakers/chaoyuan.png" class="speaker_picture" style="width:150px; height:150px;">
+                                <br><br>
+                            </a>
+                            <p style="font-size:12px; font-weight: 200;">Chao-Yuan Wu
+                                <br>Meta</p>
+                        </div>
+            
+                        <div class="large-2 columns">
+                            <a href="https://www.cs.princeton.edu/~olgarus/"><img src="./static/eccv2024/img/OlgaRussakovsky.jpeg" class="speaker_picture" style="width:150px; height:150px;">
+                                <br><br>
+                            </a>
+                            <p style="font-size:12px; font-weight: 200;">Olga Russakovsky
+                                <br>Princeton University</p>
+                        </div>
+
+
+                        <div class="large-2 columns">
+                                <a href="http://www.yu-jingyi.com/"><img src="./static/cvpr2023/img/speakers/jingyi.jpeg"  class="speaker_picture" style="width:150px; height:150px;">
+                                    <br><br>
+                                </a>
+                                <p style="font-size:12px; font-weight: 200;">Jingyi Yu
+                                    <br>ShanghaiTech University</p>
+                        </div>
+                        <div class="large-1 columns">
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <div class="row" style="display: flex; text-align:center; justify-content: center;">
+                      
+                        <div class="large-2 columns">
+                            <a href="https://faculty.cc.gatech.edu/~hays/"><img src="./static/cvpr2023/img/speakers/james.jpeg"  class="speaker_picture" style="width:150px; height:150px;">
+                                <br><br>
+                            </a>
+                            <p style="font-size:12px; font-weight: 200;">James Hays
+                                <br>Georgia Institute of Technology</p>
+                        </div>
+
+
+
+                        <div class="large-2 columns">
+                            <a href="http://people.csail.mit.edu/mrub/"><img src="./static/cvpr2023/img/speakers/miki.jpeg"   class="speaker_picture" style="width:150px; height:150px;";>
+                                    <br><br>
+                                </a>
+                                <p style="font-size:12px; font-weight: 200;">Michael Rubinstein (tentative)
+                                    <br>Google</p>
+                        </div>
+                       
+                        
+                         <div class="large-2 columns">
+                            <a href="https://sergebelongie.github.io/"><img src="./static/cvpr2023/img/speakers/belongie.png"  class="speaker_picture" style="width:150px; height:150px;">
+                                <br><br>
+                            </a>
+                            <p style="font-size:12px; font-weight: 200;">Serge Belongie (tentative)
+                                <br>University of Copenhagen</p>
+                        </div>                            
+
+
+                        <div class="large-2 columns">
+                            <a href="https://www.vision.rwth-aachen.de/person/1/"><img src="./static/cvpr2023/img/speakers/leibe.png"  class="speaker_picture" style="width:150px; height:150px;">
+                                <br><br>
+                            </a>
+                            <p style="font-size:12px; font-weight: 200;">Bastian Leibe (tentative)
+                                <br>RWTH Aachen University</p>
+                        </div>     
+
+
+                        <div class="large-1 columns">
+                            <p></p>
+                        </div>
+                         
+                    </div>
+
+                <hr>
+            </div>
+
+
+            <div class="row">
+                <h1 style="font-size:30px; color:grey; font-weight: 200">Tentative Schedule (June 17th)</h1>
+        
+                <div id="content-2">
+                    <div class="schedule">
+                        <table width="100%">
+        
+                            <tr>
+                                <td width=250>
+                                    <center><b>8:30 AM - 8:40 AM PT</b></center> 
+                                </td>
+                                <td width=300>
+                                    <center><img src="./static/cvpr2023/img/speakers/leizhangjpg"></center>
+                                </td>
+                                <td style="padding-left:8px"><b>Opening remarks</b>
+                                    <a href="https://www.leizhang.org/"><br>Lei Zhang - International Digital Economy Academy (IDEA)</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width=250>
+                                    <center> <b>8:40 AM - 9:10 AM PT</b></center> 
+                                </td>
+                                <td width=300>
+                                    <center><img src="./static/cvpr2023/img/speakers/andrew-ng.png"></center>
+                                </td>
+                                <td style="padding-left:8px"><b>Invited Talk</b>
+                                    <a href="https://www.microsoft.com/en-us/research/people/jfgao/"><br>Jianfeng Gao - Microsoft Research</a>
+                                    <br>
+                                    <b>Title: TBD </b>
+                                    <br>
+                                    <b>Bio</b> <a class="abstract-toggle">[Expand]</a>
+                                    <div class="abstract-content">
+                                      Jianfeng Gao is a Distinguished Scientist & Vice President at Microsoft Research. 
+                                      His team has done many related works in the past few years on multi-modality understanding [OSCAR, ECCV 2020; LLAVA, NeurIPS 2023], language-guided object detection [GLIP, CVPR 2022] and segmentation [SEEM, NeurIPS 2023]. 
+                                      We expect his talk will introduce the latest research progress from his team in this direction.
+                                    </div>
+                                </td>
+                            </tr>
+        
+        
+        
+                            <tr>
+                                <td width=250>
+                                    <center> <b>9:10 AM - 9:40 AM PT</b></center> 
+                                </td>
+                                <td width=300>
+                                    <center><img src="./static/cvpr2023/img/speakers/Anelia.gif"></center>
+                                </td>
+                                <td style="padding-left:8px">
+                                    <b>Invited Talk</b>
+        
+                                    <!-- [<a href="https://youtu.be/RjAFPelXXdQ">YouTube</a> | <a href="https://www.bilibili.com/video/BV1j44y1o7Zd">Bilibili</a>] -->
+                                    <a href="https://research.google/people/AneliaAngelova/"><br>Jason Corso</a>
+                                    <br>
+                                    <b>Title: TBD</b>
+                                    <br>
+                                    <b>Abstract</b> <a class="abstract-toggle">[Expand]</a>
+                                    <div class="abstract-content">
+                                        In this talk we will look at several approaches for leveraging vision and language models for the purposes of object detection in the wild: F-VLM, RO-ViT and FindIt. Furthermore, I will introduce our scaled vision-language models (e.g. PaLI and PaLI-X) which have object detection capabilities. And, lastly, I will present our newest work, MaMMUT, which is a much smaller vision-language model, but capable of many vision-language tasks, including image-text and text-image retrieval, open-vocabulary object detection, video question and answering, video captioning, and others. 
+                                    </div>
+                                    <br>
+                                    <b>Bio</b> <a class="abstract-toggle">[Expand]</a>
+                                    <div class="abstract-content">
+                                        Anelia Angelova is a research scientist leading the Vision & Language research team and has previously led the Robot Vision team at Google Research (She is currently in Google DeepMind). Her research focuses on multimodal vision and language models, semantic scene understanding, video understanding, 3D scene understanding and robotics. Anelia received her MS and PhD degrees in Computer Science from California Institute of Technology.
+                                    </div>
+        
+                                    <!-- <a target="_blank" href="https://youtu.be/SNwSukCtPM0">[Video]</a> -->
+                                    <!-- <a target="_blank" href="https://drive.google.com/file/d/14Vg_zny0Qz2oQjk58WwN6QLBD5sybYd2/view?usp=sharing">[Slides]</a> -->
+                                </td>
+                            </tr>
+        
+                            <tr>
+                                <td width=250>
+                                    <center> <b>9:40 AM - 10:10 AM PT</b></center> 
+                                </td>
+                                <td width=300>
+                                    <center> 
+                                        <h1 style="font-size:16px; color:#ffa200; font-weight: 500">Spotlight Paper Presentations
+                                        <img src="https://i.etsystatic.com/43871135/r/il/59ec81/4988653779/il_600x600.4988653779_9o7s.jpg" class=" style=" width="80" height="100" ;>
+                                        </h1> 
+                                        <b></b>
+                                    </center>
+                                </td>
+                                <td style="padding-left:8px">
+                                    
+                                    <b></b>
+
+     
+        
+                                    <br>
+                                    <!-- <a target="_blank" href="https://youtu.be/C3CAW8fW8A4">[Video]</a> -->
+                                    <!-- <a target="_blank" href="https://drive.google.com/file/d/1TxqePHlM8Ofa_7aY16QtXQ84jomIkynK/view?usp=sharing">[Slides]</a> -->
+                                </td>
+                            </tr>
+
+                             <tr>
+                                <td width=250>
+                                    <center> <b>10:10 AM - 10:30 AM PT</b> </center> 
+                                </td>
+                                <td width=300>
+                                    
+                                    <center> <h1 style="font-size:16px; color:#ffa200; font-weight: 500">Coffee break
+                                        <img src="./static/cvpr2024/img/icons/lunch_time2.png" width="90" height="120" ;> 
+                                    </h1> <b></b></center>
+                                </td>
+                                <td style="padding-left:8px">
+                                  <br>
+
+                                    <br>
+                                </td>
+                            </tr>
+
+                        
+        
+                            <tr>
+                                <td width=250>
+                                    <center> <b>10:30 AM - 11:00 AM PT</b></center> 
+                                </td>
+                                <td width=300>
+                                    <center><img src="https://jiasenlu.github.io/images/profile.jpeg"></center>
+                                </td>
+                                <td style="padding-left:8px">
+                                    <b>Invited Talk</b>
+                                    <br>
+                                    <a href="https://jiasenlu.github.io/"><br>Jiasen Lu - Allen Institute for AI</a>
+                                    <br>
+                                    <b>Title: Adaptation or training from scratch? Some preliminary thoughts and experiments towards Multimodal LLMs</b>
+                                    <br>
+                                    <b>Bio</b> <a class="abstract-toggle">[Expand]</a>
+                                    <div class="abstract-content">
+                                        Jiasen Lu is a Research Scientist at Allen Institute for AI. He obtained his Ph.D. at Georgia Tech, advised by Prof. Devi Parikh. His research is in computer vision, focusing on the intersection between vision and language, and embodiments. He has published at major computer vision (CVPR, ICCV, ECCV), machine learning (NeurIPS, ICLR), and robotics (CORL) conferences and is a co-organizer of the first and second VQA workshops at CVPR.
+                                    </div>
+                                </td>
+                            </tr>
+                          
+                            <tr>
+                                <td colspan="3">
+                                <center>
+                                <br>
+                                <em>
+                                Panel On-Site Chair: <a href="https://jwyang.github.io/"> Janwei Yang (Microsoft) </a> || Online Coordinator: <a href="https://ailingzeng.site/"> Ailing Zeng (IDEA) 
+                                </em>
+                                <br><br>
+                                </center>
+                                </td>
+                            </tr>                         
+                            <tr>
+                                <td width=250>
+                                    <center> <b>11:00 AM - 12:00 PM PT</b></center> 
+                                </td>
+                                <td width=350>
+                                    <center><img src="./static/cvpr2023/img/speakers/boqing_gong.jpg"><img src="https://bryanplummer.com/profile.jpg"><img src="https://www.cs.cmu.edu/~katef/images/stairs.png"><img src="./static/cvpr2023/img/speakers/dhruv_batra.jpg"><img src="./static/cvpr2023/img/speakers/jacob.jpeg"><img src="./static/cvpr2023/img/speakers/leizhang_square.jpg"></center>
+                                </td>
+                                <td style="padding-left:8px">
+                                    <b>Panel Discussion</b>
+                                    <a href="http://boqinggong.info/"><br>Boqing Gong</a>,
+                                    <a href="https://bryanplummer.com/"><br>Bryan A. Plummer</a>,
+                                    <a href="https://www.cs.cmu.edu/~katef/"><br>Katerina Fragkiadaki</a>,
+                                    <a href="https://faculty.cc.gatech.edu/~dbatra/"><br>Dhruv Batra</a>,
+                                    <a href="https://blog.roboflow.com/author/jacob/"><br>Jacob Solawetz</a>, 
+                                    <a href="https://www.leizhang.org/"><br>Lei Zhang</a>
+                                </td>
+                            </tr>
+
+                          
+                            <tr>
+                                <td width=250>
+                                    <center> <b>12:00 PM - 13:30 PM PT</b> </center> 
+                                </td>
+                                <td width=300>
+                                    
+                                    <center> <h1 style="font-size:16px; color:#ffa200; font-weight: 500">Lunch Break 
+                                        <img src="./static/cvpr2024/img/icons/lunch_time2.png" width="90" height="120" ;> 
+                                    </h1> <b></b></center>
+                                </td>
+                                <td style="padding-left:8px">
+                                  <br>
+
+                                    <br>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td width=250>
+                                    <center> <b>13:30 PM - 14:00 PM PT</b></center> 
+                                </td>
+                                <td width=300>
+                                    <center><img src="https://jiasenlu.github.io/images/profile.jpeg"></center>
+                                </td>
+                                <td style="padding-left:8px">
+                                    <b>Invited Talk</b>
+                                    <br>
+                                    <a href="https://jiasenlu.github.io/"><br>Jiasen Lu - Allen Institute for AI</a>
+                                    <br>
+                                    <b>Title: Adaptation or training from scratch? Some preliminary thoughts and experiments towards Multimodal LLMs</b>
+                                    <br>
+                                    <b>Bio</b> <a class="abstract-toggle">[Expand]</a>
+                                    <div class="abstract-content">
+                                        Jiasen Lu is a Research Scientist at Allen Institute for AI. He obtained his Ph.D. at Georgia Tech, advised by Prof. Devi Parikh. His research is in computer vision, focusing on the intersection between vision and language, and embodiments. He has published at major computer vision (CVPR, ICCV, ECCV), machine learning (NeurIPS, ICLR), and robotics (CORL) conferences and is a co-organizer of the first and second VQA workshops at CVPR.
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td width=250>
+                                    <center> <b>14:00 PM - 14:30 PM PT</b></center> 
+                                </td>
+                                <td width=300>
+                                    <center><img src="https://jiasenlu.github.io/images/profile.jpeg"></center>
+                                </td>
+                                <td style="padding-left:8px">
+                                    <b>Invited Talk</b>
+                                    <br>
+                                    <a href="https://jiasenlu.github.io/"><br>Jiasen Lu - Allen Institute for AI</a>
+                                    <br>
+                                    <b>Title: Adaptation or training from scratch? Some preliminary thoughts and experiments towards Multimodal LLMs</b>
+                                    <br>
+                                    <b>Bio</b> <a class="abstract-toggle">[Expand]</a>
+                                    <div class="abstract-content">
+                                        Jiasen Lu is a Research Scientist at Allen Institute for AI. He obtained his Ph.D. at Georgia Tech, advised by Prof. Devi Parikh. His research is in computer vision, focusing on the intersection between vision and language, and embodiments. He has published at major computer vision (CVPR, ICCV, ECCV), machine learning (NeurIPS, ICLR), and robotics (CORL) conferences and is a co-organizer of the first and second VQA workshops at CVPR.
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td width=250>
+                                    <center> <b>14:30 PM - 15:00 PM PT</b></center> 
+                                </td>
+                                <td width=300>
+                                    <center><img src="https://jiasenlu.github.io/images/profile.jpeg"></center>
+                                </td>
+                                <td style="padding-left:8px">
+                                    <b>Invited Talk</b>
+                                    <br>
+                                    <a href="https://jiasenlu.github.io/"><br>Jiasen Lu - Allen Institute for AI</a>
+                                    <br>
+                                    <b>Title: Adaptation or training from scratch? Some preliminary thoughts and experiments towards Multimodal LLMs</b>
+                                    <br>
+                                    <b>Bio</b> <a class="abstract-toggle">[Expand]</a>
+                                    <div class="abstract-content">
+                                        Jiasen Lu is a Research Scientist at Allen Institute for AI. He obtained his Ph.D. at Georgia Tech, advised by Prof. Devi Parikh. His research is in computer vision, focusing on the intersection between vision and language, and embodiments. He has published at major computer vision (CVPR, ICCV, ECCV), machine learning (NeurIPS, ICLR), and robotics (CORL) conferences and is a co-organizer of the first and second VQA workshops at CVPR.
+                                    </div>
+                                </td>
+                            </tr>
+
+                             <tr>
+                                <td width=250>
+                                    <center> <b>15:00 PM - 15:20 PM PT</b> </center> 
+                                </td>
+                                <td width=300>
+                                    
+                                    <center> <h1 style="font-size:16px; color:#ffa200; font-weight: 500">Coffee break
+                                        <img src="./static/cvpr2024/img/icons/lunch_time2.png" width="90" height="120" ;> 
+                                    </h1> <b></b></center>
+                                </td>
+                                <td style="padding-left:8px">
+                                  <br>
+
+                                    <br>
+                                </td>
+                            </tr>
+
+                          
+                            <tr>
+                                <td width=250>
+                                    <center> <b>15:20 PM - 15:50 PM PT</b></center> 
+                                </td>
+                                <td width=300>
+                                    <center><img src="https://jiasenlu.github.io/images/profile.jpeg"></center>
+                                </td>
+                                <td style="padding-left:8px">
+                                    <b>Invited Talk</b>
+                                    <br>
+                                    <a href="https://jiasenlu.github.io/"><br>Jiasen Lu - Allen Institute for AI</a>
+                                    <br>
+                                    <b>Title: Adaptation or training from scratch? Some preliminary thoughts and experiments towards Multimodal LLMs</b>
+                                    <br>
+                                    <b>Bio</b> <a class="abstract-toggle">[Expand]</a>
+                                    <div class="abstract-content">
+                                        Jiasen Lu is a Research Scientist at Allen Institute for AI. He obtained his Ph.D. at Georgia Tech, advised by Prof. Devi Parikh. His research is in computer vision, focusing on the intersection between vision and language, and embodiments. He has published at major computer vision (CVPR, ICCV, ECCV), machine learning (NeurIPS, ICLR), and robotics (CORL) conferences and is a co-organizer of the first and second VQA workshops at CVPR.
+                                    </div>
+                                </td>
+                            </tr>
+
+
+                             <tr>
+                                <td width=250>
+                                    <center> <b>15:50 PM - 16:20 PM PT</b></center> 
+                                </td>
+                                <td width=300>
+                                    <center><img src="https://jiasenlu.github.io/images/profile.jpeg"></center>
+                                </td>
+                                <td style="padding-left:8px">
+                                    <b>Invited Talk</b>
+                                    <br>
+                                    <a href="https://jiasenlu.github.io/"><br>Jiasen Lu - Allen Institute for AI</a>
+                                    <br>
+                                    <b>Title: Adaptation or training from scratch? Some preliminary thoughts and experiments towards Multimodal LLMs</b>
+                                    <br>
+                                    <b>Bio</b> <a class="abstract-toggle">[Expand]</a>
+                                    <div class="abstract-content">
+                                        Jiasen Lu is a Research Scientist at Allen Institute for AI. He obtained his Ph.D. at Georgia Tech, advised by Prof. Devi Parikh. His research is in computer vision, focusing on the intersection between vision and language, and embodiments. He has published at major computer vision (CVPR, ICCV, ECCV), machine learning (NeurIPS, ICLR), and robotics (CORL) conferences and is a co-organizer of the first and second VQA workshops at CVPR.
+                                    </div>
+                                </td>
+                            </tr>
+
+        
+                            <tr>
+                                <td colspan="3">
+                                <center>
+                                <br>
+                                <em>
+                                Panel On-Site Chair: <a href="https://jwyang.github.io/"> Janwei Yang (Microsoft) </a> || Online Coordinator: <a href="https://ailingzeng.site/"> Ailing Zeng (IDEA)
+                                </em>
+                                <br><br>
+                                </center>
+                                </td>
+                            </tr>                         
+                            <tr>
+                                <td width=250>
+                                    <center> <b>4:30 PM - 5:30 PM PT</b></center> 
+                                </td>
+                                <td width=350>
+                                    <center><img src="./static/cvpr2023/img/speakers/boqing_gong.jpg"><img src="https://bryanplummer.com/profile.jpg"><img src="https://www.cs.cmu.edu/~katef/images/stairs.png"><img src="./static/cvpr2023/img/speakers/dhruv_batra.jpg"><img src="./static/cvpr2023/img/speakers/jacob.jpeg"><img src="./static/cvpr2023/img/speakers/leizhang_square.jpg"></center>
+                                </td>
+                                <td style="padding-left:8px">
+                                    <b>Panel Discussion</b>
+                                    <a href="http://boqinggong.info/"><br>Boqing Gong</a>,
+                                    <a href="https://bryanplummer.com/"><br>Bryan A. Plummer</a>,
+                                    <a href="https://www.cs.cmu.edu/~katef/"><br>Katerina Fragkiadaki</a>,
+                                    <a href="https://faculty.cc.gatech.edu/~dbatra/"><br>Dhruv Batra</a>,
+                                    <a href="https://blog.roboflow.com/author/jacob/"><br>Jacob Solawetz</a>, 
+                                    <a href="https://www.leizhang.org/"><br>Lei Zhang</a>
+                                    <!-- <a target="_blank" href="https://youtu.be/C3CAW8fW8A4">[Video]</a> -->
+                                    <!-- <a target="_blank" href="https://drive.google.com/file/d/1TxqePHlM8Ofa_7aY16QtXQ84jomIkynK/view?usp=sharing">[Slides]</a> -->
+                                </td>
+                            </tr>
+    
+                        </table>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        
+ 
+      
+
+<div class="row">
+    <h1 style="font-size:30px; color:grey; font-weight: 200">Workshop Organizers</h1>
+    <div class="team" id="people" align=center>
+        <div class="row">
+
+
+            <div class="large-1 columns">
+                <a href="https://www.leizhang.org/"><img src="./static/cvpr2024/img/leizhang.jpg" target="_blank" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Lei Zhang
+                    <br>IDEA Research, China</p>
+                </div>
+
+
+             <div class="large-1 columns">
+                <a href="https://www.ganghua.org/"><img src="./static/cvpr2024/img/huagang.jpeg" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Gang Hua  
+                    <br>Wormpex AI Research, USA</p>
+            </div> 
+
+                
+            <div class="large-1 columns">
+                <a href="https://disi.unitn.it/~sebe/"><img src="./static/cvpr2024/img/nicu.png" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Nicu Sebe
+                    <br>University of Trento, Italy</p>
+            </div>
+
+            <div class="large-1 columns">
+                <a href="https://www.cs.utexas.edu/~grauman/"><img src="./static/cvpr2024/img/huagang.jpeg" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Kristen Grauman
+                    <br>UT Austin, USA</p>
+            </div>
+
+            <div class="large-1 columns">
+                <a href="http://cvl.ist.osaka-u.ac.jp/en/member/matsushita/"><img src="./static/cvpr2024/img/kristen.jpg" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Yasuyuki Matsushita
+                    <br>Osaka University, Japan</p>
+            </div>
+
+            <div class="large-1 columns">
+                <a href="https://anikem.github.io/"><img src="./static/cvpr2024/img/aniK.jpeg" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Aniruddha Kembhavi
+                    <br>Allen Institute for AI, USA</p>
+            </div>
+
+            <div class="large-1 columns">
+                <a href="https://ailingzeng.site/"><img src="./static/cvpr2024/img/ailing.jpeg" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Ailing Zeng
+                    <br>IDEA Research, China</p>
+            </div> 
+
+             <div class="large-1 columns">
+                <a href="https://jwyang.github.io/"><img src="./static/cvpr2024/img/jianwei.png" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Jianwei Yang
+                    <br>Microsoft Research, USA</p>
+            </div> 
+          
+            <div class="large-1 columns">
+                <a href="https://xiyinmsu.github.io/"><img src="./static/cvpr2024/img/xi.jpeg" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Xi Yin
+                    <br>Meta, USA</p>
+            </div> 
+          
+            <div class="large-1 columns">
+                <a href="https://scholar.google.com.hk/citations?user=9akH-n8AAAAJ&hl=en"><img src="./static/cvpr2024/img/harry.jpeg" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Heung-Yeung Shum
+                    <br>HKUST, Hongkong</p>
+            </div> 
+    <hr>
+</div>
+</div>
+
+    <hr>
+</div>
+</div>
+
+
+</body>
+
 </html>
