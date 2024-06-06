@@ -2,723 +2,739 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!--Open Graph Related Stuff-->
-    <meta property="og:title" content="Workshop on Computer Vision with Humans in the Loop 2024" />
-    <meta property="og:url" content="https://cvhl.org/" />
-    <meta property="og:description" content="June 18 at CVPR 2024" />
-    <meta property="og:description" content="CVPR 2024" />
-    <meta property="og:site_name" content="Computer Vision with Humans in the Loop 2024" />
-    <meta property="og:image" content="static/cvpr2024/img/cvpr24.png" />
-    <meta property="og:image:url" content="static/cvpr2024/img/cvpr24.png" />
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Workshop on Computer Vision with Humans in the Loop 2024">
-    <meta name="twitter:description" content="June 18 at CVPR 2024">
-    <meta name="twitter:description" content="CVPR 2024">
-    <meta name="twitter:image" content="static/cvpr2024/img/cvpr24.png">
-    <title>CVPRW24: Computer Vision with Humans in the Loop</title>
-    <link rel="stylesheet" href="./static/css/foundation.css">
-    <link rel="stylesheet" href="./static/css/main.css">
-    <script src="./static/js/vendor/jquery.js"></script>
-    <script src="./static/js/jquery-2.1.3.min.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!--Open Graph Related Stuff-->
+  <meta property="og:title" content="Workshop on Computer Vision with Humans in the Loop 2024" />
+  <meta property="og:url" content="https://cvhl.org/" />
+  <meta property="og:description" content="June 18 at CVPR 2024" />
+  <meta property="og:description" content="CVPR 2024" />
+  <meta property="og:site_name" content="Computer Vision with Humans in the Loop 2024" />
+  <meta property="og:image" content="static/cvpr2024/img/cvpr24.png" />
+  <meta property="og:image:url" content="static/cvpr2024/img/cvpr24.png" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Workshop on Computer Vision with Humans in the Loop 2024">
+  <meta name="twitter:description" content="June 18 at CVPR 2024">
+  <meta name="twitter:description" content="CVPR 2024">
+  <meta name="twitter:image" content="static/cvpr2024/img/cvpr24.png">
+  <title>CVPRW24: Computer Vision with Humans in the Loop</title>
+  <link rel="stylesheet" href="./static/css/foundation.css">
+  <link rel="stylesheet" href="./static/css/main.css">
+  <script src="./static/js/vendor/jquery.js"></script>
+  <script src="./static/js/jquery-2.1.3.min.js"></script>
 
-    <script type="text/javascript" src="./static/js/jquery.countdown.min.js"></script>
-    <script type="text/javascript" src="./static/js/moment.min.js"></script>
-    <script type="text/javascript" src="./static/js/moment-timezone-with-data.min.js"></script>
+  <script type="text/javascript" src="./static/js/jquery.countdown.min.js"></script>
+  <script type="text/javascript" src="./static/js/moment.min.js"></script>
+  <script type="text/javascript" src="./static/js/moment-timezone-with-data.min.js"></script>
 
-    <script type="text/javascript" src="./static/js/main-vqa.js"></script>
-    <script type="text/javascript" src="./static/js/main-gqa.js"></script>
-    <script type="text/javascript" src="./static/js/main-visdial.js"></script>
-    <script type="text/javascript" src="./static/js/main-textvqa.js"></script>
-    <script type="text/javascript" src="./static/js/main-textcaps.js"></script>
-    <script type="text/javascript" src="./static/js/main-vizwiz.js"></script>
+  <script type="text/javascript" src="./static/js/main-vqa.js"></script>
+  <script type="text/javascript" src="./static/js/main-gqa.js"></script>
+  <script type="text/javascript" src="./static/js/main-visdial.js"></script>
+  <script type="text/javascript" src="./static/js/main-textvqa.js"></script>
+  <script type="text/javascript" src="./static/js/main-textcaps.js"></script>
+  <script type="text/javascript" src="./static/js/main-vizwiz.js"></script>
 
 </head>
 <style type="text/css">
-.schedule table {
+  .schedule table {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-}
+  }
 
-.schedule tr:hover {
-    background-color: #D3D3D3;
-}
+  .schedule tr td {
+    padding: 1.5625em 1em;
+  }
 
-.schedule img {
+  .schedule tr:hover {
+    background-color: #e5e5e5;
+  }
+
+  .schedule img {
     max-height: 95px;
     max-width: 140px;
     margin-right: 2px;
     margin-top: 4px;
     margin-bottom: 4px;
     border-radius: 50%;
-}
+  }
 
-.abstract-content {
+  .abstract-content {
     display: none;
     padding: 5px;
-}
+  }
 
-.disclaimer {
+  .disclaimer {
     padding-left: 25px;
     text-align: left;
     font-size: 14px;
     line-height: 16px;
-}
-.disclaimer b {
+  }
+
+  .disclaimer b {
     font-weight: bold !important;
-}
+  }
 </style>
 
-    
+
 <body class="off-canvas hide-extras" style="min-width:1300px; min-height:750px;">
 
-    <header>
-        <div class="row">
-            <a href="https://cvhl.org/"><img src="./static/cvpr2024/img/cvpr24.png" alt="logo" /></a>
-            <br>
-        </div>
-    </header>
-
-    <div class="contain-to-grid">
-
-            </section>
-        </nav>
+  <header>
+    <div class="row">
+      <a href="https://cvhl.org/"><img src="./static/cvpr2024/img/cvpr24.png" alt="logo" /></a>
+      <br>
     </div>
-    <section role="main" style="padding: 1em;">
-        <div class="row">
-            <p style="font-size:50px; color:black; font-weight: 50" align=center>The 1st Workshop on Computer Vision with Humans in the Loop
+  </header>
+
+  <div class="contain-to-grid">
+
+    </section>
+    </nav>
+  </div>
+  <section role="main" style="padding: 1em;">
+    <div class="row">
+      <p style="font-size:50px; color:black; font-weight: 300" align=center>
+        CVPR 2024 Workshop on 
+        <br/>
+        Computer Vision with Humans in the Loop (CVHL)
+        <br>
+        <!-- <span style="font-size:30px; color:gray; font-weight: 50" align=center>@ CVPR 2024, June 18 (only invited talk)
+          <br> </span> -->
+      </p>
+
+      <!-- <p style="font-size:34px; color:black; font-weight: 400; margin-top: -2rem;" align=center>
+        CVPR 2024 Workshop on Computer Vision with Humans in the Loop (CVHL)
+      </p> -->
+
+      <section class="section" style="margin-top: -3rem;" align=center>
+        <div class="container is-max-desktop">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <h3 class="title is-3"> Time and Venue </h3>
+              <dl class="row">
+                <dt class="col-sm-2" style="display: inline-block; margin-right: 5px;"><strong>Date:</strong></dt>
+                <dd class="col-sm-10" style="display: inline-block; margin-left: 0;">Tuesday, June 18, 2024</dd>
                 <br>
-                <span style="font-size:30px; color:gray; font-weight: 50" align=center>@ CVPR 2024, June 18 (only invited talk) <br> </span>
+                <dt class="col-sm-2" style="display: inline-block; margin-right: 5px;"><strong>Time:</strong></dt>
+                <dd class="col-sm-10" style="display: inline-block; margin-left: 0;">8:30 AM - 17:15 PM</dd>
+                <br>
+                <dt class="col-sm-2" style="display: inline-block; margin-right: 5px;"><strong>Room:</strong></dt>
+                <dd class="col-sm-10" style="display: inline-block; margin-left: 0;">Room Summit 329</dd>
+                <br>
+                <dt class="col-sm-2" style="display: inline-block; margin-right: 5px;"><strong>Venue:</strong></dt>
+                <dd class="col-sm-10" style="display: inline-block; margin-left: 0;">Seattle Convention Center, Seattle,
+                  USA</dd>
+              </dl>
+            </div>
+          </div>
+          <br>
+          <br>
+        </div>
+      </section>
 
-            </p>
+      <div class="row">
+        <h1 style="font-size:30px; color:grey; font-weight: 200">Overview</h1>
+        <div class="large-12 columns" style="text-align:left;">
+          <p style="font-size:15px; font-weight: 400; text-align:left">
+            The ultimate goal of computer vision is to enable computers to perceive the world like humans. In the past
+            two decades, computer vision has
+            made phenomenal progress and even surpassed human parity in a few tasks. However, in many more tasks,
+            computer vision is still not as great as
+            human vision, with many scattered issues that are difficult to unify and many long-tailed applications that
+            require either special architectures
+            or tedious data effort.
+            <br><br>
 
+            While the research community is still pursuing foundation models, we want to emphasize the importance of
+            having humans in the loop
+            to solve computer vision. We have observed many research works trying to address vision problems from this
+            perspective.
+            Early works include <a href="https://dl.acm.org/doi/pdf/10.1145/1015706.1015719"> Lazy Snapping</a>[SIGGRAPH
+            2004], which leverages user clicks and scribbles to make interactive segmentation
+            possible. Nowadays, mouse clicks and scribbles have become an indispensable interactive operation for object
+            segmentation,
+            matting, and many other image and video editing and annotation problems, such as <a
+              href="https://arxiv.org/abs/2104.06404">Implicit PointRend</a>[CVPR 2022],
+            <a href="https://arxiv.org/abs/2204.02574">Focal Click</a>[CVPR 2022], <a
+              href="https://segment-anything.com/">SAM</a>[ICCV 2023], and <a
+              href="https://openaccess.thecvf.com/content/ICCV2023/html/Yang_Neural_Interactive_Keypoint_Detection_ICCV_2023_paper.html">Click
+              Pose</a>[ICCV 2023].
+            More recently, thanks to the advancement in language
+            understanding, a new trend has emerged to leverage language or visual prompts to help extend a vision model
+            to cover longtail concepts,
+            such as <a href="https://arxiv.org/abs/2103.00020">CLIP</a> [ICML 2021], <a
+              href="https://arxiv.org/abs/2112.03857">GLIP</a> [CVPR 2022], <a
+              href="https://arxiv.org/abs/2303.05499">Grounding DINO</a> [arxiv 2023], <a
+              href="https://arxiv.org/abs/2304.06718">SEEM</a> [NeurIPS 2023], and <a
+              href="https://arxiv.org/abs/2306.05399">Matting Anything</a> [arxiv 2023].
+            <br><br>
 
+            Moreover, for real-world applications and from a system perspective, computer vision systems need to be
+            self-aware, meaning that
+            the systems need to know when they do not know. Since the ultimate objective of visual perception is to
+            facilitate downstream
+            decisions, such self-awareness is very important as it endows the systems the capability to actively query
+            humans for input or
+            actively prompt for human control (such as in the Tesla Autopilot scenario). Early research works include
+            using active learning
+            for more efficient data labeling <a href="https://ieeexplore.ieee.org/document/5459392"> [ICCV 2009]</a>, to
+            more recent efforts advocating solutions to open-set recognition <a
+              href="https://ieeexplore.ieee.org/document/6365193">[T-PAMI 2013]</a>,
+            and more recent efforts in uncertainty modeling in deep learning, dubbed the name <a
+              href="https://papers.nips.cc/paper_files/paper/2018/hash/a981f2b708044d6fb4a71a1463242520-Abstract.html">evidential
+              deep learning</a> [NeurIPS 2018].
+            <br><br>
 
+            Considering both its importance and the recent research trend, we propose to organize a workshop entitled
+            “Computer Vision with Humans in the Loop”
+            to bring researchers, practitioners, and enthusiasts to explore and discuss the evolving role of human
+            feedback in solving computer vision problems.
+          </p>
+        </div>
+        <hr>
+      </div>
 
-        <div class="row">
-            <h1 style="font-size:30px; color:grey; font-weight: 200">Overview</h1>
-            <div class="large-12 columns" style="text-align:left;">
-                <p style="font-size:15px; font-weight: 400; text-align:left">
-                The ultimate goal of computer vision is to enable computers to perceive the world like humans. In the past two decades, computer vision has 
-                  made phenomenal progress and even surpassed human parity in a few tasks. However, in many more tasks, computer vision is still not as great as 
-                  human vision, with many scattered issues that are difficult to unify and many long-tailed applications that require either special architectures 
-                  or tedious data effort.
-                <br><br>
+      <div class="row">
+        <h1 style="font-size:30px; color:grey; font-weight: 200">Tentative Schedule (June 18th, Tuesday)</h1>
+        <div class="large-12 columns" style="text-align:left;">
+          <p style="font-size:15px; font-weight: 400; text-align:left">
+            (All talks are scheduled for 30 minutes including Q&A)
+          </p>
+          <div class="schedule">
+            <table width="100%">
+              <tr>
+                <td width=200>
+                  <center> <span><b>8:30 am - 8:35 am PT</b></span></center>
+                </td>
+                <td width=350>
+                  <center> <span><b>Lei Zhang</b></span></center>
+                </td>
+                <td>
+                  <span><b>Opening Remarks</b></span>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  <span style="color:gray;">Session Chair: TBD</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <center> <span><b>8:35 am - 9:05 am PT</b></span></center>
+                </td>
+                <td>
+                  <center> <span><b><a href="#serge_belongie">Talk1</a>: Serge Belongie</b></span></center>
+                </td>
+                <td>
+                  <span><b>Searching for Structure in Unfalsifiable Claims</b></span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <center> <span><b>9:05 am - 9:35 am PT</b></span></center>
+                </td>
+                <td>
+                  <center> <span><b><a href="#jingyi_yu">Talk2</a>: Jingyi Yu</b></span></center>
+                </td>
+                <td>
+                  <span><b>The Ways We Perceive 3D and How They Affects AIGC</b></span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <center> <span><b>9:35 am - 10:05 am PT</b></span></center>
+                </td>
+                <td>
+                  <center> <span><b><a href="#jianfeng_gao">Talk3</a>: Jianfeng Gao</b></span></center>
+                </td>
+                <td>
+                  <span><b>From LLMs to Multi-Modal Agents</b></span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <center> <span><b>10:05 am - 10:45 am PT</b></span></center>
+                </td>
+                <td colspan="2">
+                  <center> <span style="margin-left: -200px;"><b>Coffee Break</b></span></center>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  <span style="color:gray;">Session Chair: TBD</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <center> <span><b>10:45 am - 11:15 am PT</b></span></center>
+                </td>
+                <td>
+                  <center> <span><b><a href="#james_hays">Talk4</a>: James Hays</b></span></center>
+                </td>
+                <td>
+                  <span><b>Humans in the loop in Personalization and Geolocalization</b></span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <center> <span><b>11:15 am - 12:00 pm PT</b></span></center>
+                </td>
+                <td>
+                  <center> <span><b>Panel1: Serge Belongie, Jingyi Yu, Jianfeng Gao, James Hays <br>Moderator: Dongdong
+                        Chen</b></span></center>
+                </td>
+                <td>
+                  <span><b>AIGC: Hallucination vs. Intelligence</b></span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <center> <span><b>12:00 pm - 1:30 pm PT</b></span></center>
+                </td>
+                <td colspan="2">
+                  <center> <span style="margin-left: -200px;"><b>Lunch Time</b></span></center>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  <span style="color:gray;">Session Chair: TBD</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <center> <span><b>1:30 pm - 2:00 pm PT</b></span></center>
+                </td>
+                <td>
+                  <center> <span><b><a href="#christoph_feichtenhofer">Talk5</a>: Christoph Feichtenhofer</b></span></center>
+                </td>
+                <td>
+                  <span><b>How to collect large-scale image-language data from the web</b></span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <center> <span><b>2:00 pm - 2:30 pm PT</b></span></center>
+                </td>
+                <td>
+                  <center> <span><b><a href="#danna_gurari">Talk6</a>: Danna Gurari</b></span></center>
+                </td>
+                <td>
+                  <span><b>Predicting When to Engage Humans to Efficiently, Collect High Quality Image and Video
+                      Annotations</b></span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <center> <span><b>2:30 pm - 3:00 pm PT</b></span></center>
+                </td>
+                <td>
+                  <center> <span><b><a href="#jason_corso">Talk7</a>: Jason Corso</b></span></center>
+                </td>
+                <td>
+                  <span><b>Hazy Oracles in Human+AI Collaboration</b></span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <center> <span><b>3:00 pm - 3:45 pm PT</b></span></center>
+                </td>
+                <td colspan="2">
+                  <center> <span style="margin-left: -200px;"><b>Coffee Break</b></span></center>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  <span style="color:gray;">Session Chair: TBD</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <center> <span><b>3:45 pm - 4:15 pm PT</b></span></center>
+                </td>
+                <td>
+                  <center> <span><b><a href="#ranjay_krishna">Talk8</a>: Ranjay Krishna</b></span></center>
+                </td>
+                <td>
+                  <span><b>TBD</b></span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <center> <span><b>4:15 pm - 5:15 pm PT</b></span></center>
+                </td>
+                <td>
+                  <center> <span><b>Panel2: Christoph Feichtenhofer, Danna Gurari, Jason Corso, Ranjay Krishna
+                      <br>Moderator: Lei Zhang</b></span></center>
+                </td>
+                <td>
+                  <span><b>Collaborative Vision: The Synergy of Human Insight and AI Sigh</b></span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <hr>
+      </div>
 
-                While the research community is still pursuing foundation models, we want to emphasize the importance of having humans in the loop 
-                  to solve computer vision. We have observed many research works trying to address vision problems from this perspective. 
-                  Early works include <a href="https://dl.acm.org/doi/pdf/10.1145/1015706.1015719"> Lazy Snapping</a>[SIGGRAPH 2004], which leverages user clicks and scribbles to make interactive segmentation 
-                  possible. Nowadays, mouse clicks and scribbles have become an indispensable interactive operation for object segmentation, 
-                  matting, and many other image and video editing and annotation problems, such as <a href="https://arxiv.org/abs/2104.06404">Implicit PointRend</a>[CVPR 2022], 
-                  <a href="https://arxiv.org/abs/2204.02574">Focal Click</a>[CVPR 2022], <a href="https://segment-anything.com/">SAM</a>[ICCV 2023], and <a href="https://openaccess.thecvf.com/content/ICCV2023/html/Yang_Neural_Interactive_Keypoint_Detection_ICCV_2023_paper.html">Click Pose</a>[ICCV 2023]. 
-                  More recently, thanks to the advancement in language 
-                  understanding, a new trend has emerged to leverage language or visual prompts to help extend a vision model to cover longtail concepts,
-                  such as <a href="https://arxiv.org/abs/2103.00020">CLIP</a> [ICML 2021], <a href="https://arxiv.org/abs/2112.03857">GLIP</a> [CVPR 2022], <a href="https://arxiv.org/abs/2303.05499">Grounding DINO</a> [arxiv 2023], <a href="https://arxiv.org/abs/2304.06718">SEEM</a> [NeurIPS 2023], and <a href="https://arxiv.org/abs/2306.05399">Matting Anything</a> [arxiv 2023].
-                  <br><br>
-                  
-                 Moreover, for real-world applications and from a system perspective, computer vision systems need to be self-aware, meaning that 
-                  the systems need to know when they do not know. Since the ultimate objective of visual perception is to facilitate downstream 
-                  decisions, such self-awareness is very important as it endows the systems the capability to actively query humans for input or 
-                  actively prompt for human control (such as in the Tesla Autopilot scenario). Early research works include using active learning 
-                  for more efficient data labeling <a href="https://ieeexplore.ieee.org/document/5459392"> [ICCV 2009]</a>, to more recent efforts advocating solutions to open-set recognition <a href="https://ieeexplore.ieee.org/document/6365193">[T-PAMI 2013]</a>, 
-                  and more recent efforts in uncertainty modeling in deep learning, dubbed the name <a href="https://papers.nips.cc/paper_files/paper/2018/hash/a981f2b708044d6fb4a71a1463242520-Abstract.html">evidential deep learning</a> [NeurIPS 2018].
-                  <br><br>
-                  
-                  Considering both its importance and the recent research trend, we propose to organize a workshop entitled “Computer Vision with Humans in the Loop”
-                  to bring researchers, practitioners, and enthusiasts to explore and discuss the evolving role of human feedback in solving computer vision problems.
-                  
-   
+      <!-- Talk Details -->
+      <div class="row">
+        <h1 style="font-size:30px; color:grey; font-weight: 200">Talk Details</h1>
+
+        <h2 style="font-size:20px; font-weight: 400"><a id="serge_belongie">Serge Belongie</a></h2>
+        <div class="large-12 columns" style="text-align:left;">
+          <p style="font-size:15px; font-weight: 400; text-align:left">
+            <b>Talk Title:</b>
+            <br />
+            Searching for Structure in Unfalsifiable Claims
+            <br />
+            <b>Abstract:</b>
+            <br />
+            While advances in automated fact-checking are critical in the fight against the spread of misinformation in social media, we argue that more attention is needed in the domain of unfalsifiable claims. In this talk, we outline some promising directions for identifying the prevailing narratives in shared content (image & text) and explore how the associated learned representations can be used to identify misinformation campaigns and sources of polarization.
+            <br />
+            <b>Bio:</b>
+            <br />
+            Serge Belongie is a professor of Computer Science at the University of Copenhagen, where he also serves as the head of the Pioneer Centre for Artificial Intelligence (P1). Previously, he was a professor of Computer Science at Cornell University, an Associate Dean at Cornell Tech, and a member of the Visiting Faculty program at Google. His research interests include Computer Vision, Machine Learning, Augmented Reality, and Human-in-the-Loop Computing. He is also a co-founder of several companies including Digital Persona and Anchovi Labs. He is a recipient of the NSF CAREER Award, the Alfred P. Sloan Research Fellowship, the MIT Technology Review “Innovators Under 35” Award, and the Helmholtz Prize for fundamental contributions in Computer Vision. He is a member of the Royal Danish Academy of Sciences and Letters and serves on the board of the European Laboratory for Learning and Intelligent Systems (ELLIS).
+            <br />
+          </p>
+        </div>
+
+        <h2 style="font-size:20px; font-weight: 400"><a id="jingyi_yu">Jingyi Yu</a></h2>
+        <div class="large-12 columns" style="text-align:left;">
+          <p style="font-size:15px; font-weight: 400; text-align:left">
+            <b>Talk Title:</b>
+            <br />
+            The Ways We Perceive 3D and How They Affects AIGC
+            <br />
+            <b>Abstract:</b>
+            <br />
+            We humans perceive the 3D world via visual cues (e.g., stereo parallax, motion parallax, shading, etc) and scene understanding (e.g., shapes, materials, etc). For decades, 3D vision had largely aligned with these mechanisms and sought to explicitly recover depth maps, normal maps, albedo, etc. In contrast, recent neural rendering (NR) techniques, ranging from NeRF to 3DGS, employ "ancient" representations (volumes, point clouds, tensors, etc) and have achieved unprecedented visual fidelity. In this talk, I discuss how imperfect or even poor 3D geometry induced/used by NR manages to achieve high rendering quality, by drawing analogy to the visual fixation mechanism in human vision. These 3D representations have further led to drastically different 3D generation methods, each with unique benefits and limitations. Finally, I discuss how these insights may lead to future 3D representations suitable for machine vision in the era of embodied AI.
+            <br />
+            <b>Bio:</b>
+            <br />
+            Jingyi Yu is an OSA Fellow, IEEE Fellow and an ACM Distinguished Scientist. He received B.S. with honor from Caltech in 2000 in Computer Science and Applied Mathematics and Ph.D. from MIT in EECS in 2005. He is currently the Vice Provost of the ShanghaiTech University and the Executive Dean of the School of Information Science and Technology. Dr. Yu has been working extensively on computational imaging, computer vision, computer graphics, and bioinformatics. He received both the Magnolia Memorial Award, NSF CAREER Award and Air Force Young Investigator Award. He has over 10 PCT patents on AI-driven computational imaging solutions, many of which have been widely deployed in smart cities, digital human, human-computer interactions, etc. He has served as an Associate Editor of IEEE TPAMI, IEEE TIP, and Elsevier CVIU as well as program chairs of several top AI conferences including ICCP 2016, ICPR 2020, WACV 2021, IEEE CVPR 2021, and ICCV 2025. He is also a member of the World Economic Forum’s Global Future Council, serving as a Curator of the Metaverse Transformation Map.
+            <br />
+          </p>
+        </div>
+
+        <h2 style="font-size:20px; font-weight: 400"><a id="jianfeng_gao">Jianfeng Gao</a></h2>
+        <div class="large-12 columns" style="text-align:left;">
+          <p style="font-size:15px; font-weight: 400; text-align:left">
+            <b>Talk Title:</b>
+            <br />
+            From LLMs to Multi-Modal Agents
+            <br />
+            <b>Abstract:</b>
+            <br />
+            In this talk, I will start with a review of the success of LLMs, then discuss how we build LLM-powered multi-modal agents. I discuss the challenges of deploying large foundation models for real world applications, such as cost in modeling, hallucination and self-improving, and present ongoing research on addressing these challenges. 
+            <br />
+            <b>Bio:</b>
+            <br />
+            Jianfeng Gao is Distinguished Scientist & Vice President at Microsoft, IEEE Fellow, ACM Fellow, and AAIA Fellow. He is leading the Deep Learning Group at Microsoft Research. The group’s mission is to advance the state-of-the-art on deep learning and its application to natural language and image understanding, and for making progress on conversational models and methods.
+            <br />
+          </p>
+        </div>
+
+        <h2 style="font-size:20px; font-weight: 400"><a id="james_hays">James Hays</a></h2>
+        <div class="large-12 columns" style="text-align:left;">
+          <p style="font-size:15px; font-weight: 400; text-align:left">
+            <b>Talk Title:</b>
+            <br />
+            Humans in the loop in Personalization and Geolocalization
+            <br />
+            <b>Bio:</b>
+            <br />
+            James Hays is an associate professor in the School of Interactive Computing at Georgia Institute of Technology since 2015. Previously, he was the Manning assistant professor of computer science at Brown University. He is also the director of perception research at Overland AI, a startup focused on off-road autonomy. He was a principal scientist at self-driving vehicle startup Argo AI from 2017 to 2022. He was a postdoc at Massachusetts Institute of Technology, received his Ph.D. from Carnegie Mellon University, and received his B.S. from Georgia Institute of Technology.  His research interests span computer vision, robotics, and machine learning. His research often involves finding new data sources to exploit (e.g. geotagged imagery, thermal imagery) or creating new datasets where none existed (e.g. human sketches, HD maps). He is the recipient of the NSF CAREER award, the Sloan Fellowship, and the PAMI Mark Everingham Prize.
+            <br />
+          </p>
+        </div>
+       
+        <h2 style="font-size:20px; font-weight: 400"><a id="christoph_feichtenhofer">Christoph Feichtenhofer</a></h2>
+        <div class="large-12 columns" style="text-align:left;">
+          <p style="font-size:15px; font-weight: 400; text-align:left">
+            <b>Talk Title:</b>
+            <br />
+            How to collect large-scale image-language data from the web
+            <br />
+            <b>Bio:</b>
+            <br />
+            Christoph Feichtenhofer is a Research Scientist Manager at Meta AI (FAIR). He received the BSc, MSc and PhD degrees (all with distinction) in computer science from TU Graz in 2011, 2013 and 2017, and spent time as a visiting researcher at York University, Toronto as well as the University of Oxford. He is a recipient of the PAMI Young Researcher Award, the DOC Fellowship of the Austrian Academy of Sciences, and the Award of Excellence for outstanding doctoral theses in Austria. His main areas of research include the development of effective representations for image and video understanding.
+            <br />
+          </p>
+        </div>
+        
+        <h2 style="font-size:20px; font-weight: 400"><a id="danna_gurari">Danna Gurari</a></h2>
+        <div class="large-12 columns" style="text-align:left;">
+          <p style="font-size:15px; font-weight: 400; text-align:left">
+            <b>Talk Title:</b>
+            <br />
+            Predicting When to Engage Humans to Efficiently, Collect High Quality Image and Video Annotations
+            <br />
+            <b>Bio:</b>
+            <br />
+            Danna Gurari is an Assistant Professor as well as Director of the Image and Video Computing group in the Computer Science Department at University of Colorado Boulder. Her research interests span computer vision, machine learning, human computation, crowdsourcing, human computer partnerships, accessibility, and (bio)medical image analysis. Her group focuses on creating computing systems that enable and accelerate the analysis of visual information. She and her work has been recognized with research awards from WACV, CHI, CSCW, ASIS&T, HCOMP GroupSight, MICCAI IMIC, and AAPM. Gurari's research has been supported by the National Science Foundation, Silicon Valley Community Foundation's Chan Zuckerberg Initiative, Microsoft, Adobe, and Amazon.
+            <br />
+          </p>
+        </div>
+
+        
+        <h2 style="font-size:20px; font-weight: 400"><a id="jason_corso">Jason Corso</a></h2>
+        <div class="large-12 columns" style="text-align:left;">
+          <p style="font-size:15px; font-weight: 400; text-align:left">
+            <b>Talk Title:</b>
+            <br />
+            Hazy Oracles in Human+AI Collaboration
+            <br />
+            <b>Abstract:</b>
+            <br />
+            This talk explores the evolving dynamics of human+AI collaboration, focusing on the concept of the human as a "hazy oracle" rather than an infallible source. It outlines the journey of integrating AI systems more deeply into practical applications through human+AI cooperation, discussing the potential value and challenges. The discussion includes the modeling of interaction errors and the strategic choices between immediate AI inference or seeking additional human input, supported by results from a user study on optimizing these collaborations.
+            <br />
+            <b>Bio:</b>
+            <br />
+            Corso is Professor of Robotics, Electrical Engineering and Computer Science at the University of Michigan and Co-Founder / CSO of the AI startup Voxel51. He received his PhD and MSE degrees at The Johns Hopkins University in 2005 and 2002, respectively, and the BS Degree with honors from Loyola College In Maryland in 2000, all in Computer Science. He is the recipient of a U Michigan EECS Outstanding Achievement Award 2018, Google Faculty Research Award 2015, the Army Research Office Young Investigator Award 2010, National Science Foundation CAREER award 2009, SUNY Buffalo Young Investigator Award 2011, a member of the 2009 DARPA Computer Science Study Group, and a recipient of the Link Foundation Fellowship in Advanced Simulation and Training 2003.  Corso has authored more than 150 peer-reviewed papers and hundreds of thousands of lines of open-source code on topics of his interest including computer vision, robotics, data science, and general computing.  He is a member of the AAAI, ACM, MAA and a senior member of the IEEE.
+            <br />
+          </p>
+        </div>
          
-
-                </p>
-            </div>
-            <hr>
+        
+        <h2 style="font-size:20px; font-weight: 400"><a id="ranjay_krishna">Ranjay Krishna</a></h2>
+        <div class="large-12 columns" style="text-align:left;">
+          <p style="font-size:15px; font-weight: 400; text-align:left">
+            <b>Talk Title:</b>
+            <br />
+            TBD
+            <br />
+            <b>Bio:</b>
+            <br />
+            Ranjay Krishna is an Assistant Professor at the Paul G. Allen School of Computer Science & Engineering. His research lies at the intersection of computer vision and human computer interaction. This research has received best paper, outstanding paper, and orals at CVPR, ACL, CSCW, NeurIPS, UIST, and ECCV, and has been reported by Science, Forbes, the Wall Street Journal, and PBS NOVA. His research has been supported by Google, Amazon, Cisco, Toyota Research Institute, NSF, ONR, and Yahoo. He holds a bachelor's degree in Electrical & Computer Engineering and in Computer Science from Cornell University, a master's degree in Computer Science from Stanford University and a Ph.D. in Computer Science from Stanford University.
+            <br />
+          </p>
         </div>
 
+        <hr>
+      </div>
 
 
+      <!-- Invited Speakers -->
+      <div class="row">
+        <h1 style="font-size:30px; color:grey; font-weight: 200">Invited Speakers</h1>
+        <div class="team" id="people">
+          <div class="row" style="display: flex; text-align:center; justify-content: center;">
+
+            <div class="large-2 columns">
+              <a href="https://www.microsoft.com/en-us/research/people/jfgao/"><img
+                  src="./static/cvpr2024/img/jianfeng.jpeg" class="speaker_picture" style="width:150px; height:150px;">
+                <br><br>
+              </a>
+              <p style="font-size:12px; font-weight: 200;">Jianfeng Gao
+                <br>Microsoft Research
+              </p>
+            </div>
+
+            <div class="large-2 columns">
+              <a href="https://web.eecs.umich.edu/~jjcorso/"><img src="./static/cvpr2024/img/jcorso.jpeg"
+                  class="speaker_picture" style="width:150px; height:150px;">
+                <br><br>
+              </a>
+              <p style="font-size:12px; font-weight: 200;">Jason Corso
+                <br>University of Michigan
+              </p>
+            </div>
+
+            <div class="large-2 columns">
+              <a href="https://feichtenhofer.github.io/"><img src="./static/cvpr2024/img/christoph_leaf.jpg" class="speaker_picture"
+                  style="width:150px; height:150px;">
+                <br><br>
+              </a>
+              <p style="font-size:12px; font-weight: 200;">Christoph Feichtenhofer
+                <br>Meta
+              </p>
+            </div>
+
+            <div class="large-2 columns">
+              <a href="http://www.yu-jingyi.com/"><img src="./static/cvpr2024/img/jingyi.jpeg" class="speaker_picture"
+                  style="width:150px; height:150px;">
+                <br><br>
+              </a>
+              <p style="font-size:12px; font-weight: 200;">Jingyi Yu
+                <br>ShanghaiTech University
+              </p>
+            </div>
+
+            <div class="large-2 columns">
+              <a href="https://faculty.cc.gatech.edu/~hays/"><img src="./static/cvpr2024/img/james.jpeg"
+                  class="speaker_picture" style="width:150px; height:150px;">
+                <br><br>
+              </a>
+              <p style="font-size:12px; font-weight: 200;">James Hays
+                <br>Georgia Institute of Technology
+              </p>
+            </div>
+
+          </div>
+
+          <div class="row" style="display: flex; text-align:center; justify-content: center;">
+            <div class="large-2 columns">
+              <a href="https://sergebelongie.github.io/"><img src="./static/cvpr2024/img/belongie.png"
+                  class="speaker_picture" style="width:150px; height:150px;">
+                <br><br>
+              </a>
+              <p style="font-size:12px; font-weight: 200;">Serge Belongie (tentative)
+                <br>University of Copenhagen
+              </p>
+            </div>
 
 
-<!-- Invited Speakers 
-<div class="row">
-    <h1 style="font-size:30px; color:grey; font-weight: 200">Keynote Speaker</h1>
-    <div class="team" id="people">
-        <div class="row" style="display: flex; text-align:center; justify-content: center;">
+            <div class="large-2 columns">
+              <a href="https://ranjaykrishna.com/"><img src="./static/cvpr2024/img/ranjay.png" class="speaker_picture"
+                  style="width:150px; height:150px;">
+                <br><br>
+              </a>
+              <p style="font-size:12px; font-weight: 200;">Ranjay Krishna
+                <br>University of Washington
+              </p>
+            </div>
 
+            <div class="large-2 columns">
+              <a href="https://dannagurari.colorado.edu/"><img src="./static/cvpr2024/img/danna.png"
+                  class="speaker_picture" style="width:150px; height:150px;">
+                <br><br>
+              </a>
+              <p style="font-size:12px; font-weight: 200;">Danna Gurari
+                <br>University of Colorado Boulder
+              </p>
+            </div>
             <div class="large-1 columns">
-                <p></p>
+              <p></p>
             </div>
 
+          </div>
 
-            <div class="large-4 columns">
-                <a href="https://www.andrewng.org/"><img src="./static/cvpr2023/img/andrew-ng.png" class="speaker_picture" style="width:200px; height:200px;">
-                    <br><br>
-                </a>
-                <p style="font-size:12px; font-weight: 200;">Andrew Ng
-                    <br> Founder of <a href="https://www.deeplearning.ai/">DeepLearning.AI</a>, <a href="https://landing.ai/">Landing AI</a>, General Partner at <a href="https://aifund.ai/">AI Fund</a>, Chairman and Co-Founder of <a href="https://www.coursera.org/">Coursera</a> and an Adjunct Professor at Stanford University. </p>
-            </div>
-
-
-
-
-            <div class="large-1 columns">
-                <p></p>
-            </div>
-
-
-            <div class="large-1 columns">
-                <p></p>
-            </div>
+          <hr>
         </div>
 
-    <hr>
-</div>
- -->
-
-
-<!-- Invited Speakers -->
-             <div class="row">
-                <h1 style="font-size:30px; color:grey; font-weight: 200">Invited Speakers</h1>
-                <div class="team" id="people">
-                    <div class="row" style="display: flex; text-align:center; justify-content: center;">
-
-                        <div class="large-2 columns">
-                            <a href="https://www.microsoft.com/en-us/research/people/jfgao/"><img src="./static/cvpr2024/img/jianfeng.jpeg"  class="speaker_picture" style="width:150px; height:150px;">
-                                <br><br>
-                            </a>
-                            <p style="font-size:12px; font-weight: 200;">Jianfeng Gao
-                                <br>Microsoft Research</p>
-                        </div>
-
-                        <div class="large-2 columns">
-                            <a href="https://web.eecs.umich.edu/~jjcorso/"><img src="./static/cvpr2024/img/jcorso.jpeg"  class="speaker_picture" style="width:150px; height:150px;">
-                                <br><br>
-                            </a>
-                            <p style="font-size:12px; font-weight: 200;">Jason Corso
-                                <br>University of Michigan</p>
-                        </div>  
-
-                        <div class="large-2 columns">
-                            <a href="https://chaoyuan.org/"><img src="./static/cvpr2024/img/chaoyuan.png" class="speaker_picture" style="width:150px; height:150px;">
-                                <br><br>
-                            </a>
-                            <p style="font-size:12px; font-weight: 200;">Chao-Yuan Wu
-                                <br>Meta</p>
-                        </div>
-            
-                        <div class="large-2 columns">
-                            <a href="https://www.cs.princeton.edu/~olgarus/"><img src="./static/cvpr2024/img/OlgaRussakovsky.jpeg" class="speaker_picture" style="width:150px; height:150px;">
-                                <br><br>
-                            </a>
-                            <p style="font-size:12px; font-weight: 200;">Olga Russakovsky
-                                <br>Princeton University</p>
-                        </div>
-
-
-                        <div class="large-2 columns">
-                                <a href="http://www.yu-jingyi.com/"><img src="./static/cvpr2024/img/jingyi.jpeg"  class="speaker_picture" style="width:150px; height:150px;">
-                                    <br><br>
-                                </a>
-                                <p style="font-size:12px; font-weight: 200;">Jingyi Yu
-                                    <br>ShanghaiTech University</p>
-                        </div>
-                        
-                        <div class="large-2 columns">
-                            <a href="https://faculty.cc.gatech.edu/~hays/"><img src="./static/cvpr2024/img/james.jpeg"  class="speaker_picture" style="width:150px; height:150px;">
-                                <br><br>
-                            </a>
-                            <p style="font-size:12px; font-weight: 200;">James Hays
-                                <br>Georgia Institute of Technology</p>
-                        </div>
-
-
-                        <div class="large-1 columns">
-                            <p></p>
-                        </div>
-                    </div>
-
-                    <div class="row" style="display: flex; text-align:center; justify-content: center;">
-                      
-
-                        <div class="large-2 columns">
-                            <a href="http://people.csail.mit.edu/mrub/"><img src="./static/cvpr2024/img/miki.jpg"class="speaker_picture" style="width:150px; height:150px;";>
-                                    <br><br>
-                                </a>
-                                <p style="font-size:12px; font-weight: 200;">Michael Rubinstein (tentative)
-                                    <br>Google</p>
-                        </div>
-                       
-                        
-                         <div class="large-2 columns">
-                            <a href="https://sergebelongie.github.io/"><img src="./static/cvpr2024/img/belongie.png"  class="speaker_picture" style="width:150px; height:150px;">
-                                <br><br>
-                            </a>
-                            <p style="font-size:12px; font-weight: 200;">Serge Belongie (tentative)
-                                <br>University of Copenhagen</p>
-                        </div>                            
-
-
-                        <div class="large-2 columns">
-                            <a href="https://www.vision.rwth-aachen.de/person/1/"><img src="./static/cvpr2024/img/leibe.png"  class="speaker_picture" style="width:150px; height:150px;">
-                                <br><br>
-                            </a>
-                            <p style="font-size:12px; font-weight: 200;">Bastian Leibe (tentative)
-                                <br>RWTH Aachen University</p>
-                        </div>     
-
-                        <div class="large-2 columns">
-                            <a href="https://ranjaykrishna.com/"><img src="./static/cvpr2024/img/ranjay.png"  class="speaker_picture" style="width:150px; height:150px;">
-                                <br><br>
-                            </a>
-                            <p style="font-size:12px; font-weight: 200;">Ranjay Krishna
-                                <br>University of Washington</p>
-                        </div>     
-
-                        <div class="large-2 columns">
-                            <a href="https://dannagurari.colorado.edu/"><img src="./static/cvpr2024/img/danna.png"  class="speaker_picture" style="width:150px; height:150px;">
-                                <br><br>
-                            </a>
-                            <p style="font-size:12px; font-weight: 200;">Danna Gurari
-                                <br>University of Colorado Boulder</p>
-                        </div>     
-                        <div class="large-1 columns">
-                            <p></p>
-                        </div>
-                         
-                    </div>
-
-                <hr>
-            </div>
-
-<!--
-            <div class="row">
-                <h1 style="font-size:30px; color:grey; font-weight: 200">Tentative Schedule (June 17th)</h1>
-        
-                <div id="content-2">
-                    <div class="schedule">
-                        <table width="100%">
-        
-                            <tr>
-                                <td width=250>
-                                    <center><b>8:30 AM - 8:40 AM PT</b></center> 
-                                </td>
-                                <td width=300>
-                                    <center><img src="./static/cvpr2024/img/leizhang.jpg"></center>
-                                </td>
-                                <td style="padding-left:8px"><b>Opening remarks</b>
-                                    <a href="https://www.leizhang.org/"><br>Lei Zhang - International Digital Economy Academy (IDEA)</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td width=250>
-                                    <center> <b>8:40 AM - 9:10 AM PT</b></center> 
-                                </td>
-                                <td width=300>
-                                    <center><img src="./static/cvpr2024/img/jianfeng.jpeg"></center>
-                                </td>
-                                <td style="padding-left:8px"><b>Invited Talk</b>
-                                    <a href="https://www.microsoft.com/en-us/research/people/jfgao/"><br>Jianfeng Gao - Microsoft Research</a>
-                                    <br>
-                                    <b>Title: TBD </b>
-                                    <br>
-                                    <b>Bio</b> <a class="abstract-toggle">[Expand]</a>
-                                    <div class="abstract-content">
-                                      Jianfeng Gao is a Distinguished Scientist & Vice President at Microsoft Research. 
-                                      His team has done many related works in the past few years on multi-modality understanding [OSCAR, ECCV 2020; LLAVA, NeurIPS 2023], language-guided object detection [GLIP, CVPR 2022] and segmentation [SEEM, NeurIPS 2023]. 
-                                      We expect his talk will introduce the latest research progress from his team in this direction.
-                                    </div>
-                                </td>
-                            </tr>
-        
-        
-        
-                            <tr>
-                                <td width=250>
-                                    <center> <b>9:10 AM - 9:40 AM PT</b></center> 
-                                </td>
-                                <td width=300>
-                                    <center><img src="./static/cvpr2024/img/jcorso.jpeg"></center>
-                                </td>
-                                <td style="padding-left:8px">
-                                    <b>Invited Talk</b>
-        
-                                    <a href="https://web.eecs.umich.edu/~jjcorso/"><br>Jason Corso - University of Michigan</a>
-                                    <br>
-                                    <b>Title: TBD</b>
-                                    <br>
-                                    <b>Abstract</b> <a class="abstract-toggle">[Expand]</a>
-                                    <div class="abstract-content">
-                                        Jason Corso is a Professor of EECS at University of Michigan. He is also the Co-Founder and CEO of Voxel51, which has been widely used by computer vision researchers/developers for interactive data visualization and curation. 
-                                        We expect his talk will share more interesting problems from the platform and application perspective.
-                                    </div>
-                                    <br>
-        
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td width=250>
-                                    <center> <b>9:40 AM - 10:10 AM PT</b></center> 
-                                </td>
-                                <td width=300>
-                                    <center><img src="./static/cvpr2024/img/chaoyuan.png"></center>
-                                </td>
-                                <td style="padding-left:8px">
-                                    <b>Invited Talk</b>
-        
-                                    <a href="https://chaoyuan.org/"><br>Chao-Yuan Wu - Meta</a>
-                                    <br>
-                                    <b>Title: TBD</b>
-                                    <br>
-                                    <b>Abstract</b> <a class="abstract-toggle">[Expand]</a>
-                                    <div class="abstract-content">
-                                        Chao-Yuan Wu is a Research Scientist in the Fundamental AI Research (FAIR) team at Meta AI. His research interests are primarily in computer vision, with a focus on 3D and videos (4D computer vision). He is now with the team who developed the SAM model and is joining the effort on the follow-up work. 
-                                        We expect he will be able to share more research progress after SAM.                                    </div>
-                                    <br>
-
-                                </td>
-                            </tr>
-                             <tr>
-                                <td width=250>
-                                    <center> <b>10:10 AM - 10:30 AM PT</b> </center> 
-                                </td>
-                                <td width=300>
-                                    
-                                    <center> <h1 style="font-size:16px; color:#ffa200; font-weight: 500">Coffee break
-                                        <img src="./static/cvpr2024/img/coffee-break.png" width="90" height="120" ;> 
-                                    </h1> <b></b></center>
-                                </td>
-                                <td style="padding-left:8px">
-                                  <br>
-
-                                    <br>
-                                </td>
-                            </tr>
-
-                        
-        
-                            <tr>
-                                <td width=250>
-                                    <center> <b>10:30 AM - 11:00 AM PT</b></center> 
-                                </td>
-                                <td width=300>
-                                    <center><img src="./static/cvpr2024/img/OlgaRussakovsky.jpeg"></center>
-                                </td>
-                                <td style="padding-left:8px">
-                                    <b>Invited Talk</b>
-                                    <br>
-                                    <a href="https://www.cs.princeton.edu/~olgarus/"><br>Olga Russakovsky - Princeton University</a>
-                                    <br>
-                                    <b>Title: TBD </b>
-                                    <br>
-                                    <b>Bio</b> <a class="abstract-toggle">[Expand]</a>
-                                    <div class="abstract-content">
-                                    Olga Russakovsky is an Associate Professor at Princeton University. She was the key researcher behind the ImageNet dataset development and has firsthands insights on crowdsourcing in computer vision and scalable multi-label annotation. We expect she will share with the audience her unique insights on 
-                                        large-scale vision dataset development and her views on the new challenges on the changing dynamics of human feedback in computer vision.                                    </div>
-                                </td>
-                            </tr>
-                          
-                            <tr>
-                                <td colspan="3">
-                                <center>
-                                <br>
-                                <em>
-                                Panel On-Site Chair: <a href="https://jwyang.github.io/"> Janwei Yang (Microsoft) </a> || Online Coordinator: <a href="https://ailingzeng.site/"> Ailing Zeng (IDEA) 
-                                </em>
-                                <br><br>
-                                </center>
-                                </td>
-                            </tr>                         
-                            <tr>
-                                <td width=250>
-                                    <center> <b>11:00 AM - 12:00 PM PT</b></center> 
-                                </td>
-                                <td width=350>
-                                    <center><img src="./static/cvpr2024/img/leizhang.jpg"><img src="./static/cvpr2024/img/leizhang.jpg"></center>                                
-                                </td>
-                                <td style="padding-left:8px">
-                                    <b>Panel Discussion</b>
-
-                                    <a href="https://www.leizhang.org/"><br>Lei Zhang</a>
-                                    
-                                </td>
-                            </tr>
-
-                          
-                            <tr>
-                                <td width=250>
-                                    <center> <b>12:00 PM - 13:30 PM PT</b> </center> 
-                                </td>
-                                <td width=300>
-                                    
-                                    <center> <h1 style="font-size:16px; color:#ffa200; font-weight: 500">Lunch Break 
-                                        <img src="./static/cvpr2024/img/lunch-break.png" width="90" height="120" ;> 
-                                    </h1> <b></b></center>
-                                </td>
-                                <td style="padding-left:8px">
-                                  <br>
-
-                                    <br>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td width=250>
-                                    <center> <b>13:30 PM - 14:00 PM PT</b></center> 
-                                </td>
-                                <td width=300>
-                                    <center><img src="./static/cvpr2024/img/jingyi.jpeg"></center>
-                                </td>
-                                <td style="padding-left:8px">
-                                    <b>Invited Talk</b>
-                                    <br>
-                                    <a href="http://www.yu-jingyi.com/"><br>Jingyi Yu - ShanghaiTech University</a>
-                                    <br>
-                                    <b>Title: TBD</b>
-                                    <br>
-                                    <b>Bio</b> <a class="abstract-toggle">[Expand]</a>
-                                    <div class="abstract-content">
-                                    Jingyi Yu is a Professor and Executive Dean of the School of Information Science and Technology at ShanghaiTech University. His research interests span a range of topics in computer vision and computer graphics, with related research to this workshop such as interactive matting, interactive glossy reflections, 
-                                        and neural interactive bullet time generator. It would be interesting for the workshop to learn his research from the computer graphics perspective.                                   
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td width=250>
-                                    <center> <b>14:00 PM - 14:30 PM PT</b></center> 
-                                </td>
-                                <td width=300>
-                                    <center><img src="./static/cvpr2024/img/james.jpeg"></center>
-                                </td>
-                                <td style="padding-left:8px">
-                                    <b>Invited Talk</b>
-                                    <br>
-                                    <a href="https://faculty.cc.gatech.edu/~hays/"><br>James Hays - Georgia Institute of Technology</a>
-                                    <br>
-                                    <b>Title: TBD</b>
-                                    <br>
-                                    <b>Bio</b> <a class="abstract-toggle">[Expand]</a>
-                                    <div class="abstract-content">
-                                    James Hays is an Associate Professor of the School of Interactive Computing at Georgia Institute of Technology. He works on problems related to recognition, synthesis, and manipulation and his research often involves finding new data sources to exploit (e.g. geotagged imagery) or creating new datasets where none existed (e.g. sketches or grasps). In particular, he has explored how to use sketches for both image generation and retrieval. 
-                                        We look forward to learning his insight and more latest research on computer vision with smart user interactions.                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td width=250>
-                                    <center> <b>14:30 PM - 15:00 PM PT</b></center> 
-                                </td>
-                                <td width=300>
-                                    <center><img src="./static/cvpr2024/img/miki.jpg"></center>
-                                </td>
-                                <td style="padding-left:8px">
-                                    <b>Invited Talk</b>
-                                    <br>
-                                    <a href="http://people.csail.mit.edu/mrub/"><br>Michael Rubinstein - Google</a>
-                                    <br>
-                                    <b>Title: TBD</b>
-                                    <br>
-                                    <b>Bio</b> <a class="abstract-toggle">[Expand]</a>
-                                    <div class="abstract-content">
-                                    Michael Rubinstein is a Research Scientist at Google. He mainly works at the intersection of computer vision and computer graphics, with particular interests on low-level image/video processing and computational photography. His research on image & video retargeting and text-to-image & text-to-3D are pioneering and representative in related areas.
-                                        We expect his talk will share his research on language-guided interaction from the generation perspective.                                    </div>
-                                </td>
-                            </tr>
-
-                             <tr>
-                                <td width=250>
-                                    <center> <b>15:00 PM - 15:20 PM PT</b> </center> 
-                                </td>
-                                <td width=300>
-                                    
-                                    <center> <h1 style="font-size:16px; color:#ffa200; font-weight: 500">Coffee break
-                                        <img src="./static/cvpr2024/img/coffee-break.png" width="90" height="120" ;> 
-                                    </h1> <b></b></center>
-                                </td>
-                                <td style="padding-left:8px">
-                                  <br>
-
-                                    <br>
-                                </td>
-                            </tr>
-
-                          
-                            <tr>
-                                <td width=250>
-                                    <center> <b>15:20 PM - 15:50 PM PT</b></center> 
-                                </td>
-                                <td width=300>
-                                    <center><img src="./static/cvpr2024/img/belongie.png"></center>
-                                </td>
-                                <td style="padding-left:8px">
-                                    <b>Invited Talk</b>
-                                    <br>
-                                    <a href="https://www.belongielab.org/"><br>Serge Belongie - University of Copenhagen</a>
-                                    <br>
-                                    <b>Title: TBD</b>
-                                    <br>
-                                    <b>Bio</b> <a class="abstract-toggle">[Expand]</a>
-                                    <div class="abstract-content">
-                                        Serge Belongie is a Professor at the University of Copenhagen. His research explores problem areas including fine-grained analysis of multimodal data, self-supervised learning, 2D/3D generative models, and augmented reality, with many related works on interactive computer vision and text-guided detection and generation. He also guest-edited an IJCV 2014 Special Issue on Active and Interactive Methods in Computer Vision, together with Kristen Grauman. 
-                                        It would be great for the workshop to learn about his longtime experience in this direction.                                    </div>
-                                </td>
-                            </tr>
-
-
-                             <tr>
-                                <td width=250>
-                                    <center> <b>15:50 PM - 16:20 PM PT</b></center> 
-                                </td>
-                                <td width=300>
-                                    <center><img src="./static/cvpr2024/img/leibe.png"></center>
-                                </td>
-                                <td style="padding-left:8px">
-                                    <b>Invited Talk</b>
-                                    <br>
-                                    <a href="https://www.vision.rwth-aachen.de/person/1/"><br>Bastian Leibe - RWTH Aachen University</a>
-                                    <br>
-                                    <b>Title: TBD</b>
-                                    <br>
-                                    <b>Bio</b> <a class="abstract-toggle">[Expand]</a>
-                                    <div class="abstract-content">
-                                    Bastian Leibe is a Professor at RWTH Aachen University. The central theme of his work is the connection of different areas of computer vision and graphics into so-called "cognitive loops", collaborative feedback cycles in which multiple vision modalities mutually support each other in order to solve a bigger task than any could do on its own. He has developed a series of algorithms for 2D and 3D interactive segmentation, which is of great value for getting better object detection and segmentation results with the help of users. 
-                                        We expect his talk will share more insights in this direction.                                    </div>
-                                </td>
-                            </tr>
-
-        
-                            <tr>
-                                <td colspan="3">
-                                <center>
-                                <br>
-                                <em>
-                                Panel On-Site Chair: <a href="https://jwyang.github.io/"> Janwei Yang (Microsoft) </a> || Online Coordinator: <a href="https://ailingzeng.site/"> Ailing Zeng (IDEA)
-                                </em>
-                                <br><br>
-                                </center>
-                                </td>
-                            </tr>                         
-                            <tr>
-                                <td width=250>
-                                    <center> <b>4:30 PM - 5:30 PM PT</b></center> 
-                                </td>
-                                <td width=350>
-                                    <center><img src="./static/cvpr2024/img/leizhang.jpg"><img src="./static/cvpr2024/img/leizhang.jpg"></center>
-                                </td>
-                                <td style="padding-left:8px">
-                                    <b>Panel Discussion</b>
-
-                                    <a href="https://www.leizhang.org/"><br>Lei Zhang</a>
-                                </td>
-                            </tr>
-    
-                        </table>
-                    </div>
-                    <hr>
-                </div>
-            </div>
-        
- -->
-      
-
-<div class="row">
-    <h1 style="font-size:30px; color:grey; font-weight: 250">Workshop Organizers</h1>
-    <div class="team" id="people" align=center>
         <div class="row">
+          <h1 style="font-size:30px; color:grey; font-weight: 250">Workshop Organizers</h1>
+          <div class="team" id="people" align=center>
+            <div class="row">
 
 
-            <div class="large-1 columns">
-                <a href="https://www.leizhang.org/"><img src="./static/cvpr2024/img/leizhang.jpg" target="_blank" class="home_team_picture style=" width="75" height="75" ;>
-                    <br><br>
+              <div class="large-1 columns">
+                <a href="https://www.leizhang.org/"><img src="./static/cvpr2024/img/leizhang.jpg" target="_blank"
+                    class="home_team_picture style=" width="75" height="75" ;>
+                  <br><br>
                 </a>
                 <p style="font-size:12px; font-weight: 250;">Lei Zhang
-                    <br>IDEA Research, China</p>
-                </div>
+                  <br>IDEA Research, China
+                </p>
+              </div>
 
 
-             <div class="large-1 columns">
-                <a href="https://www.ganghua.org/"><img src="./static/cvpr2024/img/huagang.jpeg" class="home_team_picture style=" width="75" height="75" ;>
-                    <br><br>
+              <div class="large-1 columns">
+                <a href="https://www.ganghua.org/"><img src="./static/cvpr2024/img/huagang.jpeg"
+                    class="home_team_picture style=" width="75" height="75" ;>
+                  <br><br>
                 </a>
-                <p style="font-size:12px; font-weight: 250;">Gang Hua  
-                    <br>Wormpex AI Research, USA</p>
-            </div> 
+                <p style="font-size:12px; font-weight: 250;">Gang Hua
+                  <br>Wormpex AI Research, USA
+                </p>
+              </div>
 
-                
-            <div class="large-1 columns">
-                <a href="https://disi.unitn.it/~sebe/"><img src="./static/cvpr2024/img/nicu.png" class="home_team_picture style=" width="75" height="75" ;>
-                    <br><br>
+
+              <div class="large-1 columns">
+                <a href="https://disi.unitn.it/~sebe/"><img src="./static/cvpr2024/img/nicu.png"
+                    class="home_team_picture style=" width="75" height="75" ;>
+                  <br><br>
                 </a>
                 <p style="font-size:12px; font-weight: 250;">Nicu Sebe
-                    <br>University of Trento, Italy</p>
-            </div>
+                  <br>University of Trento, Italy
+                </p>
+              </div>
 
-            <div class="large-1 columns">
-                <a href="https://www.cs.utexas.edu/~grauman/"><img src="./static/cvpr2024/img/kristen.jpg" class="home_team_picture style=" width="75" height="75" ;>
-                    <br><br>
+              <div class="large-1 columns">
+                <a href="https://www.cs.utexas.edu/~grauman/"><img src="./static/cvpr2024/img/kristen.jpg"
+                    class="home_team_picture style=" width="75" height="75" ;>
+                  <br><br>
                 </a>
                 <p style="font-size:12px; font-weight: 250;">Kristen Grauman
-                    <br>UT Austin, USA</p>
-            </div>
+                  <br>UT Austin, USA
+                </p>
+              </div>
 
-            <div class="large-1 columns">
-                <a href="http://cvl.ist.osaka-u.ac.jp/en/member/matsushita/"><img src="./static/cvpr2024/img/ym.jpg" class="home_team_picture style=" width="75" height="75" ;>
-                    <br><br>
+              <div class="large-1 columns">
+                <a href="http://cvl.ist.osaka-u.ac.jp/en/member/matsushita/"><img src="./static/cvpr2024/img/ym.jpg"
+                    class="home_team_picture style=" width="75" height="75" ;>
+                  <br><br>
                 </a>
                 <p style="font-size:12px; font-weight: 250;">Yasuyuki Matsushita
-                    <br>Osaka University, Japan</p>
-            </div>
+                  <br>Osaka University, Japan
+                </p>
+              </div>
 
-            <div class="large-1 columns">
-                <a href="https://anikem.github.io/"><img src="./static/cvpr2024/img/aniK.jpeg" class="home_team_picture style=" width="75" height="75" ;>
-                    <br><br>
+              <div class="large-1 columns">
+                <a href="https://anikem.github.io/"><img src="./static/cvpr2024/img/aniK.jpeg"
+                    class="home_team_picture style=" width="75" height="75" ;>
+                  <br><br>
                 </a>
                 <p style="font-size:12px; font-weight: 250;">Aniruddha Kembhavi
-                    <br>Allen Institute for AI, USA</p>
-            </div>
+                  <br>Allen Institute for AI, USA
+                </p>
+              </div>
 
-            <div class="large-1 columns">
-                <a href="https://ailingzeng.site/"><img src="./static/cvpr2024/img/ailing.jpeg" class="home_team_picture style=" width="75" height="75" ;>
-                    <br><br>
+              <div class="large-1 columns">
+                <a href="https://ailingzeng.site/"><img src="./static/cvpr2024/img/ailing.jpeg"
+                    class="home_team_picture style=" width="75" height="75" ;>
+                  <br><br>
                 </a>
                 <p style="font-size:12px; font-weight: 250;">Ailing Zeng
-                    <br>IDEA Research, China</p>
-            </div> 
+                  <br>IDEA Research, China
+                </p>
+              </div>
 
-             <div class="large-1 columns">
-                <a href="https://jwyang.github.io/"><img src="./static/cvpr2024/img/jianwei.png" class="home_team_picture style=" width="75" height="75" ;>
-                    <br><br>
+              <div class="large-1 columns">
+                <a href="https://jwyang.github.io/"><img src="./static/cvpr2024/img/jianwei.png"
+                    class="home_team_picture style=" width="75" height="75" ;>
+                  <br><br>
                 </a>
                 <p style="font-size:12px; font-weight: 250;">Jianwei Yang
-                    <br>Microsoft Research, USA</p>
-            </div> 
-          
-            <div class="large-1 columns">
-                <a href="https://xiyinmsu.github.io/"><img src="./static/cvpr2024/img/xi.jpeg" class="home_team_picture style=" width="75" height="75" ;>
-                    <br><br>
+                  <br>Microsoft Research, USA
+                </p>
+              </div>
+
+              <div class="large-1 columns">
+                <a href="https://xiyinmsu.github.io/"><img src="./static/cvpr2024/img/xi.jpeg"
+                    class="home_team_picture style=" width="75" height="75" ;>
+                  <br><br>
                 </a>
                 <p style="font-size:12px; font-weight: 250;">Xi Yin
-                    <br>Meta, USA</p>
-            </div> 
-          
-            <div class="large-1 columns">
-                <a href="https://scholar.google.com.hk/citations?user=9akH-n8AAAAJ&hl=en"><img src="./static/cvpr2024/img/harry.jpeg" class="home_team_picture style=" width="75" height="75" ;>
-                    <br><br>
+                  <br>Meta, USA
+                </p>
+              </div>
+
+              <div class="large-1 columns">
+                <a href="https://www.dongdongchen.bid/"><img src="./static/cvpr2024/img/donnie_chen.jpg"
+                    class="home_team_picture style=" width="75" height="75" ;>
+                  <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 250;">Dongdong Chen
+                  <br>Microsoft, USA
+                </p>
+              </div>
+
+              <div class="large-1 columns">
+                <a href="https://scholar.google.com.hk/citations?user=9akH-n8AAAAJ&hl=en"><img
+                    src="./static/cvpr2024/img/harry.jpeg" class="home_team_picture style=" width="75" height="75" ;>
+                  <br><br>
                 </a>
                 <p style="font-size:12px; font-weight: 250;">Heung-Yeung Shum
-                    <br>HKUST, Hongkong</p>
-            </div> 
-    <hr>
-</div>
-</div>
+                  <br>HKUST, Hongkong
+                </p>
+              </div>
+              <hr>
+            </div>
+          </div>
 
-    <hr>
-</div>
-</div>
-
-
+          <hr>
+        </div>
+      </div>
 </body>
 
 </html>
